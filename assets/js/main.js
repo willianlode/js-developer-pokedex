@@ -1,3 +1,4 @@
+
 let pokemonsHTMLList=document.querySelector(".pokemons");
 let paginationItems=document.getElementsByClassName("page");
 let selectedPage=document.getElementById("selectedpage");
@@ -195,4 +196,3 @@ function loadPokemonItens(offset,limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons)=>pokemons.map(convertPokemonToLi))
 }
 loadPokemonItens(offset,limit);
-
