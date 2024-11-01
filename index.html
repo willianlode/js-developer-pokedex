@@ -23,15 +23,18 @@
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
+    <main>
+        
+        <section class="content">
+            <h1>Pokedex</h1>
 
 
-        <ol class="pokemons">
+            <ol class="pokemons">
+                
+            </ol>
             
-        </ol>
-        <footer>
-            
+        </section>
+        <div class="footer">  
             <label for="pagenumber">Show:</label>
             <select id="pagenumber" name="pagenumber">
                 <option value="8">8</option>
@@ -39,20 +42,24 @@
                 <option value="24" >24</option>
                 <option value="32">32</option>
             </select>
-            <ul class="pages">
-                <li class="page"><<</li>
-                <li class="page"><</li>
-                <li class="page" id="selectedpage">1</li>
-                <li class="page">2</li>
-                <li class="page">3</li>
-                <li class="page">4</li>
-                <li class="page">5</li>
-                <li class="page">></li>
-                <li class="page">>></li>
-            </ul>
+            <div class="pagination">
+                <ul class="pages">
+                    <li class="page"><<</li>
+                    <li class="page"><</li>
+                    <li class="page" id="selectedpage">1</li>
+                    <li class="page">2</li>
+                    <li class="page">3</li>
+                    <li class="page">4</li>
+                    <li class="page">5</li>
+                    <li class="page">></li>
+                    <li class="page">>></li>
+                </ul>
+            </div>
+                
+        </div>
             
-        </footer>
-    </section>
+        
+    </main>
 
     <!-- Nosso JS -->
     <script src="./assets/js/pokemonModel.js"></script>
